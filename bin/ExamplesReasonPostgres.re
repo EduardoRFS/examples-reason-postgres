@@ -1,4 +1,6 @@
-open Pastel;
+open Opium.Std;
 
-let message = <Pastel color=Red> "Tuturu2" </Pastel>;
-Console.log(message);
+let hello_world =
+  get("/hello", _req => Response.of_plain_text("Hello World") |> Lwt.return);
+
+App.empty |> hello_world |> App.port(3000) |> App.run_command;
