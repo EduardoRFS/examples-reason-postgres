@@ -1,6 +1,7 @@
 (executable
  (name ExamplesReasonPostgres)
  (public_name examples-reason-postgres)
- (libraries console.lib pastel.lib opium yojson uuidm logs.fmt)
+ (libraries console.lib pastel.lib opium yojson uuidm logs.fmt caqti
+   caqti-lwt caqti-driver-postgresql)
  (preprocess
-  (pps ppx_deriving_yojson)))
+  (pps ppx_deriving_yojson ppx_rapper)))

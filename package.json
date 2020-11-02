@@ -1,35 +1,32 @@
 {
   "name": "examples-reason-postgres",
-  "esy": {
-    "build": "dune build -p examples-reason-postgres"
-  },
-  "scripts": {
-    "start": "esy x examples-reason-postgres"
-  },
+  "esy": { "build": "dune build -p examples-reason-postgres" },
+  "scripts": { "start": "esy x examples-reason-postgres" },
   "dependencies": {
     "@esy-ocaml/reason": "^3.6.2",
+    "@opam/caqti": "1.2.3",
+    "@opam/caqti-driver-postgresql": "1.2.4",
     "@opam/dune": "*",
     "@opam/fmt": "0.8.9",
     "@opam/logs": "0.7.0",
-    "@opam/opium": "rgrinberg/opium:opium.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
-    "@opam/opium_kernel": "rgrinberg/opium:opium_kernel.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
+    "@opam/opium":
+      "rgrinberg/opium:opium.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
+    "@opam/opium_kernel":
+      "rgrinberg/opium:opium_kernel.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
+    "@opam/postgresql": "4.6.3",
     "@opam/ppx_deriving_yojson": "3.5.3",
+    "@opam/ppx_rapper": "2.0.0",
     "@opam/uuidm": "0.9.7",
     "@reason-native/console": "*",
     "@reason-native/pastel": "*",
     "ocaml": "~4.10.0"
   },
-  "devDependencies": {
-    "@opam/ocaml-lsp-server": "*"
-  },
+  "devDependencies": { "@opam/ocaml-lsp-server": "*" },
   "resolutions": {
     "@opam/opium_kernel": {
-      "source": "rgrinberg/opium:opium_kernel.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
-      "override": {
-        "dependencies": {
-          "@opam/ppx_sexp_conv": "*"
-        }
-      }
+      "source":
+        "rgrinberg/opium:opium_kernel.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
+      "override": { "dependencies": { "@opam/ppx_sexp_conv": "*" } }
     }
   }
 }

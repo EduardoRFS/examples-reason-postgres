@@ -26,7 +26,7 @@ let read_all =
     storage |> response_from_json(Storage.to_yojson);
   });
 let read_by_id =
-  get("/message/:id", req => {
+  get("/messages/:id", req => {
     let id = Router.param(req, "id");
     let.await found_message = Storage.read_by_id(~id);
     switch (found_message) {
@@ -43,7 +43,7 @@ type submit_message = {
 };
 
 let create =
-  post("/message", req => {
+  post("/messages", req => {
     let.await payload = req |> json_from_req(submit_message_of_yojson);
 
     let.await message =
@@ -55,7 +55,7 @@ let create =
 [@deriving yojson]
 type update_message = {body: string};
 let update_by_id =
-  put("/message/:id", req => {
+  put("/messages/:id", req => {
     let id = Router.param(req, "id");
     let.await payload = req |> json_from_req(update_message_of_yojson);
     let.await () = Storage.update(~id, ~body=payload.body);
@@ -63,7 +63,7 @@ let update_by_id =
   });
 
 let delete_by_id =
-  delete("/message/:id", req => {
+  delete("/messages/:id", req => {
     let id = Router.param(req, "id");
     let.await () = Storage.delete(~id);
     Response.make(~status=`No_content, ()) |> Lwt.return;
