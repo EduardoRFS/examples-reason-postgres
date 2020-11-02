@@ -1,4 +1,6 @@
 (executable
  (name ExamplesReasonPostgres)
  (public_name examples-reason-postgres)
- (libraries console.lib pastel.lib opium))
+ (libraries console.lib pastel.lib opium yojson uuidm logs.fmt)
+ (preprocess
+  (pps ppx_deriving_yojson)))
