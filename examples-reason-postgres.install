@@ -1,0 +1,8 @@
+lib: [
+  "/home/eduardo/reason/examples-reason-postgres/_esy/default/store/b/examples_reason_postgres-2a6360cb/install/default/lib/examples-reason-postgres/META"
+  "/home/eduardo/reason/examples-reason-postgres/_esy/default/store/b/examples_reason_postgres-2a6360cb/install/default/lib/examples-reason-postgres/dune-package"
+  "/home/eduardo/reason/examples-reason-postgres/_esy/default/store/b/examples_reason_postgres-2a6360cb/install/default/lib/examples-reason-postgres/opam"
+]
+bin: [
+  "/home/eduardo/reason/examples-reason-postgres/_esy/default/store/b/examples_reason_postgres-2a6360cb/install/default/bin/ExamplesReasonPostgres"
+]

@@ -1,0 +1,4 @@
+(executable
+ (name ExamplesReasonPostgres)
+ (public_name ExamplesReasonPostgres)
+ (libraries console.lib pastel.lib))

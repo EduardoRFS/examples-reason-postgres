@@ -1,0 +1,28 @@
+{
+  "name": "examples-reason-postgres",
+  "esy": {
+    "build": "dune build -p $cur__name"
+  },
+  "dependencies": {
+    "ocaml": "~4.10.0",
+    "@opam/dune": "*",
+    "@opam/opium": "rgrinberg/opium:opium.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
+    "@opam/opium_kernel": "rgrinberg/opium:opium_kernel.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
+    "@esy-ocaml/reason": "^3.6.2",
+    "@reason-native/console": "*",
+    "@reason-native/pastel": "*"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "*"
+  },
+  "resolutions": {
+    "@opam/opium_kernel": {
+      "source": "rgrinberg/opium:opium_kernel.opam#a840e4653387fc80529b1c48bc3c66b682eb1426",
+      "override": {
+        "dependencies": {
+          "@opam/ppx_sexp_conv": "*"
+        }
+      }
+    }
+  }
+}
