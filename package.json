@@ -1,7 +1,10 @@
 {
   "name": "examples-reason-postgres",
   "esy": {
-    "build": "dune build -p $cur__name"
+    "build": "dune build -p examples-reason-postgres"
+  },
+  "scripts": {
+    "start": "esy x examples-reason-postgres"
   },
   "dependencies": {
     "ocaml": "~4.10.0",
