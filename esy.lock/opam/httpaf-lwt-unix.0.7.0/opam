@@ -22,6 +22,6 @@ depends: [
 ]
 synopsis: "Lwt support for http/af"
 url {
-  src: "https://github.com/inhabitedtype/httpaf/archive/0.6.6.tar.gz"
-  checksum: "md5=905aa1eea6fd5c1ddc0902d9884a8832"
+  src: "https://github.com/inhabitedtype/httpaf/archive/0.7.0.tar.gz"
+  checksum: "md5=d200222727be5adb2fb6482dd68557c3"
 }

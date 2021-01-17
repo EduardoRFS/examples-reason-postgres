@@ -6,7 +6,7 @@
     "@esy-ocaml/reason": "^3.6.2",
     "@opam/caqti": "1.2.3",
     "@opam/caqti-driver-postgresql": "1.2.4",
-    "@opam/dune": "*",
+    "@opam/dune": "2.7.1",
     "@opam/fmt": "0.8.9",
     "@opam/logs": "0.7.0",
     "@opam/opium":
@@ -19,7 +19,7 @@
     "@opam/uuidm": "0.9.7",
     "@reason-native/console": "*",
     "@reason-native/pastel": "*",
-    "ocaml": "~4.10.0"
+    "ocaml": "4.10.2000"
   },
   "devDependencies": { "@opam/ocaml-lsp-server": "*" },
   "resolutions": {

@@ -25,12 +25,12 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-x-commit-hash: "9e565925ea69b7bce5117757ec28848586e9be5d"
+x-commit-hash: "b4a8375d9352d29ff495d35fc309609fad74631a"
 url {
   src:
-    "https://github.com/mirage/ocaml-uri/releases/download/v4.0.0/uri-v4.0.0.tbz"
+    "https://github.com/mirage/ocaml-uri/releases/download/v4.1.0/uri-v4.1.0.tbz"
   checksum: [
-    "sha256=000d9928877581c4f2fe6e02dee41db9cc4cb1f21e383f3b6ee3a7eadfb4298f"
-    "sha512=954b082b9409717bd59164b8a03196af9320f60fcb529bf885ba1771a4097aaf6c4cc3769e1d7b8be5239bfb690119b53b6a3fa6282a5ac5a5544119d82b1b7e"
+    "sha256=d269901cd27cffaadfa077fe761ef334ad4cdbebeb065faeb833824617ab2ce1"
+    "sha512=bf9eb9aa29ced3ae9d39cb3ca8772de118bfe67d8fe2280f213e627f0fef7e80c7703a0dbb7d16c3d23c427866ee6b09c0973e6836e9c3b7225f55597356537c"
   ]
 }
